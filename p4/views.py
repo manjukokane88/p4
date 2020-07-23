@@ -20,3 +20,12 @@ def home2(request):
 
 def home3(request):
     return render(request,"demo/home3.html",{"a":15,"b":50})
+
+
+def urls_data(request,name):
+    return HttpResponse('<h1>{}</h1>'.format(name)) 
+
+def ab(request,ab):
+    a=ab.split(".")
+    sum=int(a[0])+int(a[1])
+    return HttpResponse(str(sum))    
