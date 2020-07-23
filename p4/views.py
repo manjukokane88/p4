@@ -29,3 +29,23 @@ def ab(request,ab):
     a=ab.split(".")
     sum=int(a[0])+int(a[1])
     return HttpResponse(str(sum))    
+
+
+def cd(request,c,d):
+    if c > d:
+        return HttpResponse('the greatest value is {}'.format(c))
+    elif d > c:
+        return HttpResponse('the greatest value is {}'.format(d))
+    else:
+        return HttpResponse('both are equal')    
+        
+
+
+
+
+
+
+
+
+
+

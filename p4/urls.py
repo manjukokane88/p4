@@ -26,6 +26,7 @@ urlpatterns = [
     path('home2',views.home2,name="home2"),
     path('home3',views.home3,name="home3"),
     path('url_data/<name>',views.urls_data,name="url_data"),
-    path('ab/<ab>',views.ab,name='ab')
+    path('ab/<ab>',views.ab,name='ab'),
+    path('cd/<c>,<d>',views.cd,name='cd')
     
 ]
